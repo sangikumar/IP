@@ -1,0 +1,14 @@
+Hello #USERNAME#<br><br>
+
+We have received a new activation request for your account. Please follow the link below to activate.<br>
+
+If you did not request this e-mail, please disregard this message.<br>
+
+#ACTIVATION-URL
+
+<br /><br />Thanks<br />
+INNOVAPATH, INC.<br />
+An eVerify Company<br />
+Phone: 925-400-7330<br />
+Email: <a href='mailto:info@innova-path.com'>info@innova-path.com</a><br />
+<a href='http://www.innova-path.com'>www.innova-path.com</a><br />

@@ -1,0 +1,10 @@
+Hello #USERNAME# <br><br>
+
+Thank you for joining our website #WEBSITENAME#<br>
+#ACTIVATION-MESSAGE
+<br /><br />Thanks<br />
+INNOVAPATH, INC.<br />
+An eVerify Company<br />
+Phone: 925-400-7330<br />
+Email: <a href='mailto:info@innova-path.com'>info@innova-path.com</a><br />
+<a href='http://www.innova-path.com'>www.innova-path.com</a><br />

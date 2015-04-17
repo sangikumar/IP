@@ -1,0 +1,48 @@
+/*======= index.html =======*/
+#page1 #content .col-1 {width:251px; margin-right:37px;} 
+#page1 #content .col-2 {width:252px; margin-right:40px;} 
+#page1 #content .col-3 {width:282px;} 
+
+/*======= index-1.html =======*/
+#page2 #content .row-1 .col-1 {width:251px; margin-right:37px;} 
+#page2 #content .row-1 .col-2 {width:252px; margin-right:40px;} 
+#page2 #content .row-1 .col-3 {width:271px;} 
+#page2 #content .row-2 .col-1 {
+	width:540px;
+	margin-right:40px;
+	color: #000;
+} 
+#page2 #content .row-2 .col-2 {width:276px;} 
+
+/*======= index-2.html =======*/
+#page3 #content .row-1 .col-1 {width:251px; margin-right:37px;} 
+#page3 #content .row-1 .col-2 {width:563px;} 
+#page3 #content .row-1 .col-2 .col-1 { width:242px; margin-right:52px;}
+#page3 #content .row-1 .col-2 .col-2 { width:255px;}
+#page3 #content .row-2 .col-1 {width:251px; margin-right:37px;} 
+#page3 #content .row-2 .col-2 {width:251px; margin-right:41px;} 
+#page3 #content .row-2 .col-3 {width:271px;} 
+
+/*======= index-3.html =======*/
+#page4 #content .col-1 {width:540px; margin-right:40px;} 
+#page4 #content .col-1 .col-1 { width:242px; margin-right:52px;}
+#page4 #content .col-1 .col-2 { width:244px;}
+#page4 #content .col-2 {width:276px;} 
+
+/*======= index-4.html =======*/
+#page5 #content .row-1 .col-1 {width:251px; margin-right:37px;} 
+#page5 #content .row-1 .col-2 {width:251px; margin-right:41px;} 
+#page5 #content .row-1 .col-3 {width:271px;} 
+#page5 #content .row-2 .col-1 {width:242px; margin-right:52px;} 
+#page5 #content .row-2 .col-2 {width:242px; margin-right:45px;} 
+#page5 #content .row-2 .col-3 {width:250px;} 
+
+/*======= index-5.html =======*/
+#page6 #content .row-1 .col-1 {width:540px; margin-right:40px;} 
+#page6 #content .row-1 .col-2 {width:276px;} 
+#page6 #content .row-2 .col-1 {width:251px; margin-right:37px;} 
+#page6 #content .row-2 .col-2 {width:252px; margin-right:40px;} 
+#page6 #content .row-2 .col-3 {width:271px;} 
+
+
+/*=========================*/
