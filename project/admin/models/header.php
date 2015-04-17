@@ -12,7 +12,7 @@ echo "
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <title>".$page_title."</title>
 <link href='http://$root/project/admin/$template' rel='stylesheet' type='text/css' />
-<script src='http://$root/project/admin/models/funcs.js' rel='stylesheet' type='text/javascript'></script>
+<script src='http://$root/project/admin/models/funcs.js' type='text/javascript'></script>
 <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.10.3/themes/start/jquery-ui.css' />
 <link rel='stylesheet' type='text/css' media='screen' href='/project/themes/ui.jqgrid.css'  />
 <link rel='stylesheet' type='text/css' media='screen' href='/project/themes/ui.multiselect.css'/>
@@ -25,13 +25,13 @@ echo "
 <script src='http://code.jquery.com/ui/1.10.3/jquery-ui.js' type='text/javascript'></script>
 <script src='http://$root/project/js/i18n/grid.locale-en.js' type='text/javascript'></script>
 <script src='http://$root/project/admin/models/funcs.js'  type='text/javascript'></script>
-<script src='http://$root/js/jquery.selectBoxIt.min.js'></script>
+<script src='http://$root/js/jquery.selectBoxIt.min.js' type='text/javascript'></script>
 <script src='http://$root/js/nicEdit-latest.js' type='text/javascript'></script>
 <script src='http://$root/project/js/datepicker/zebra_datepicker.js' type='text/javascript'></script>
 <script src='http://$root/project/js/numericInput.min.js' type='text/javascript'></script>
 <script src='http://$root/project/js/jquery.jqGrid.min.js' type='text/javascript'></script>
 <script src='http://$root/js/jquery.uploadfile.min.js' type='text/javascript'></script>
-<script>   $(function() {     $( '#mymenu' ).menu(); $('input').addClass('ui-corner-all');   });   </script>
+<script type='text/javascript'>   $(function() {     $( '#mymenu' ).menu(); $('input').addClass('ui-corner-all');   });   </script>
 <style>  .ui-menu { width: 130px; }  </style>
 <script type='text/javascript'>
 //<![CDATA[
