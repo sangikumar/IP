@@ -1,5 +1,5 @@
 <?php
-require_once("../models/config.php");
+require_once("/project/admin/models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])) {
     die();
 }
@@ -16,22 +16,22 @@ if (!userIdExists($userId)) {
     <title>Client-Search</title>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css"/>
     <link rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css"/>
-    <link href="models/site-templates/default.css" rel='stylesheet'
+    <link href="/project/admin/models/site-templates/default.css" rel='stylesheet'
           type='text/css'/>
-    <link href="../../../css/jquery.tagsinput.css" type="text/css" rel="stylesheet"/>
-    <link href="../../../css/newstyle.css" type="text/css" rel="stylesheet"/>
-    <link href="exam/js/datepicker/zebra_datepicker.css" rel='stylesheet' type='text/css'/>
+    <link href="/css/jquery.tagsinput.css" type="text/css" rel="stylesheet"/>
+    <link href="/project/admin/themes/newstyle.css" type="text/css" rel="stylesheet"/>
+    <link href="/project/js/datepicker/zebra_datepicker.css" rel='stylesheet' type='text/css'/>
     <link href="http://hayageek.github.io/jQuery-Upload-File/uploadfile.min.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
     <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-    <script src="exam/js/datepicker/zebra_datepicker.js" type="text/javascript"></script>
-    <script src="exam/js/numericInput.min.js" type="text/javascript"></script>
-    <script src="../../../js/jquery.tagsinput.js"></script>
-    <script src="../../../js/jquery.tagsinput.min.js"></script>
-    <script src="../../../js/jquery.watermark.js" type="text/javascript"></script>
-    <script src='../models/funcs.js' type='text/javascript'></script>
+    <script src="/project/js/datepicker/zebra_datepicker.js" type="text/javascript"></script>
+    <script src="/project/js/numericInput.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.tagsinput.js"></script>
+    <script src="/js/jquery.tagsinput.min.js"></script>
+    <script src="/js/jquery.watermark.js" type="text/javascript"></script>
+    <script src='/project/admin/models/funcs.js' type='text/javascript'></script>
     <script src="http://hayageek.github.io/jQuery-Upload-File/jquery.uploadfile.min.js"></script>
     <style>
         .ui-menu {
@@ -120,7 +120,7 @@ if (!userIdExists($userId)) {
         <br/>
 
         <div id='left-nav'>
-            <?php include($_SERVER["DOCUMENT_ROOT"] . "left-nav.php"); ?>
+            <?php include($_SERVER["DOCUMENT_ROOT"] . "/project/admin/left-nav.php"); ?>
         </div>
         <div id='main'>
             <?
@@ -148,7 +148,7 @@ if (!userIdExists($userId)) {
                         <div class="both">
                             <h1 id="show_heading">&nbsp;</h1>
 
-                            <div id="show_candidate"><img src="../../../images/loader.gif"
+                            <div id="show_candidate"><img src="/images/loader.gif"
                                                           style="margin-top:8px; float:left" id="loader" alt=""/></div>
                         </div>
                     </div>

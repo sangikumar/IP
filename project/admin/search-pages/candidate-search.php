@@ -11,8 +11,8 @@ if(!userIdExists($userId)){
 <head>
 <title>Candidate-Search</title>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
-<link href="../../../css/newstyle.css" type="text/css" rel="stylesheet"/>
-<link href="../models/site-templates/default.css" rel='stylesheet' type='text/css' />
+<link href="/project/admin/themes/newstyle.css" type="text/css" rel="stylesheet"/>
+<link href="/project/admin/models/site-templates/default.css" rel='stylesheet' type='text/css' />
 <style type="text">
 <![CDATA[
         html, body {
@@ -25,9 +25,9 @@ if(!userIdExists($userId)){
 </style>
 	<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script src="../../../js/jquery.watermark.js" type="text/javascript"></script>
+	<script src="/js/jquery.watermark.js" type="text/javascript"></script>
 	<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-	<script src='../models/funcs.js' type='text/javascript'></script>
+	<script src='/project/admin/models/funcs.js' type='text/javascript'></script>
 <style>  .ui-menu { width: 130px; }  </style>
 <script type="text/javascript">
 //bkLib.onDomLoaded(function() {  });
@@ -106,12 +106,12 @@ if(!userIdExists($userId)){
   	color:#6e6e6e;
   	padding:10px;
   	border:none;
-  	background:url(../images/loading_static.gif) no-repeat right 50%;
+  	background:url(/images/loading_static.gif) no-repeat right 50%;
   	width:300px;
   }
   /*The css class below contains the animated loading image .this will be added on the dom later with Jquery*/
   .faqsearchinputbox input.loading {
-  	background:url(../images/loading_animate.gif) no-repeat right 50%;
+  	background:url(/images/loading_animate.gif) no-repeat right 50%;
   }
 
   #show_candidate { display: none; }
@@ -175,7 +175,7 @@ if (!empty($_POST))
    $mysqli->close();
 ?>
 
-  <form action="../search-pages/candidate-search.php" method="post">
+  <form action="project/admin/search-pages/candidate-search.php" method="post">
     <div class="prod-content">
       <div class="faqsearch">
         <div class="faqsearchinputbox">
@@ -185,7 +185,7 @@ if (!empty($_POST))
       	<div class="both">
       		<h1 id="show_heading">&nbsp;</h1>
       		<div id="show_candidate">
-      			<img src="../../../images/loader.gif" style="margin-top:8px; float:left" id="loader" alt="" />			
+      			<img src="/images/loader.gif" style="margin-top:8px; float:left" id="loader" alt="" />
       		</div>
       	</div>		
 				

@@ -1,5 +1,6 @@
-<?php 
-require_once("../models/config.php");
+<?php
+
+require_once("/project/admin/models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
 $userId = $loggedInUser->user_id;
 if(!userIdExists($userId)){
@@ -13,8 +14,8 @@ if(!userIdExists($userId)){
 <head>
 <title>Questions-Search</title>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
-<link href="../../../css/newstyle.css" type="text/css" rel="stylesheet"/>
-<link href="../models/site-templates/default.css" rel='stylesheet' type='text/css' />
+<link href="/css/newstyle.css" type="text/css" rel="stylesheet"/>
+<link href="/project/admin/models/site-templates/default.css" rel='stylesheet' type='text/css' />
 <style type="text">
 <![CDATA[
         html, body {
@@ -27,8 +28,8 @@ if(!userIdExists($userId)){
 </style>
 <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="../../../js/jquery.watermark.js" type="text/javascript"></script>
-<script src='../models/funcs.js' type='text/javascript'></script>
+<script src="/js/jquery.watermark.js" type="text/javascript"></script>
+<script src='/project/admin/models/funcs.js' type='text/javascript'></script>
 <style>  .ui-menu { width: 130px; }  </style>
 <script type="text/javascript">
 //bkLib.onDomLoaded(function() {  });
@@ -86,7 +87,7 @@ if(!userIdExists($userId)){
   }
   /*The css class below contains the animated loading image .this will be added on the dom later with Jquery*/
   .faqsearchinputbox input.loading {
-  	background:url(images/loading_animate.gif) no-repeat right 50%;
+  	background:url(/images/loading_animate.gif) no-repeat right 50%;
   }
 </style>	
 
