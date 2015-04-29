@@ -1711,9 +1711,11 @@ if (isUserLoggedIn()) {
 else {
     echo "
 	<ul id='mymenu'>
-	<li><a href='$root/index.php'>Home</a></li>
-	<li><a href='$root/login.php'>Login</a></li>
-	<li><a href='$root/register.php'>Register</a></li>";
+	<nav class='nav nav-pills nav-stacked'></nav>
+	<div class='nav nav-pills nav-stacked'></div>
+	<li class ='active'><a href='$root/index.php'>Home</a></li>
+	<li class ='active'><a href='$root/login.php'>Login</a></li>
+	<li class='active'><a href='$root/register.php'>Register</a></li>";
     //<li><a href='$root/forgot-password.php'>Forgot Password</a></li>
     //if ($emailActivation)
     //{

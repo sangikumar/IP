@@ -66,12 +66,12 @@
 
                 <class="nav nav-pills nav-stacked">
 
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="Login.html">Login</a></li>
-                <li class="active"><a href="Register.html">Register</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="Login.html">Login</a></li>
+                    <li class="active"><a href="Register.html">Register</a></li>
 
 
-                </li>
+                    </li>
 
                 </ul>
                 <!--//nav-->
@@ -124,27 +124,27 @@
             </br>
 
             <button type="button" class="btn btn-danger">Register</button>
-            </form>
-            </article><!--//contact-form-->
+                        </form>
+                    </article><!--//contact-form-->
 
-        </div><!--//content-->
-    </div><!--//wrapper-->
+    </div><!--//content-->
+</div><!--//wrapper-->
 
-    <!-- ******FOOTER****** -->
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="assets/plugins/pretty-photo/js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jflickrfeed/jflickrfeed.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="assets/plugins/gmaps/gmaps.js"></script>
-    <script type="text/javascript" src="assets/js/map.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+<!-- ******FOOTER****** -->
+<!-- Javascript -->
+<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+<script type="text/javascript" src="assets/plugins/pretty-photo/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="assets/plugins/jflickrfeed/jflickrfeed.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="assets/plugins/gmaps/gmaps.js"></script>
+<script type="text/javascript" src="assets/js/map.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 
 
 </body>

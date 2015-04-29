@@ -137,11 +137,12 @@ echo "
 <div id='top'><div id='logo'></div><div id='logo1'></div></div>
 <div id='content'>
 <div id='left-nav'>
-";
-
-
-//include($_SERVER["DOCUMENT_ROOT"] ."left-nav.php");
-include($_SERVER["DOCUMENT_ROOT"] . "/project/admin/left-nav.php");
+<ul id='mymenu'>
+	<nav class='nav nav-pills nav-stacked'></nav>
+	<div class='nav nav-pills nav-stacked'></div>
+	<li class ='active'><a href='$root/index.php'>Home</a></li>
+	<li class ='active'><a href='$root/login.php'>Login</a></li>
+	<li class='active'><a href='$root/register.php'>Register</a></li>";
 
 echo "
 </div>
