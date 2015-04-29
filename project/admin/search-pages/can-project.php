@@ -11,7 +11,7 @@ if(!userIdExists($userId)){header("Location:login.php"); die();}
 <title>Candidate Project</title>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
 <link rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
-<link href="models/site-templates/default.css" rel='stylesheet' type='text/css' />
+<link href="/project/admin/models/site-templates/default.css" rel='stylesheet' type='text/css' />
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
@@ -133,7 +133,7 @@ if (!empty($_POST))
         </tr>
       </table>
       <div class="both">
-        <div id="show_content"> <img src="../../images/loader.gif" style="margin-top:0px; float:left" id="loader" alt="" /> </div>
+        <div id="show_content"> <img src="/images/loader.gif" style="margin-top:0px; float:left" id="loader" alt="" /> </div>
       </div>
     </form>
     <?

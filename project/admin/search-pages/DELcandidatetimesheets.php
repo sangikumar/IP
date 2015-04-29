@@ -1,5 +1,7 @@
-<?php 
-require_once("../models/config.php");
+<?php
+
+
+require_once("/project/admin/models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
 $userId = $loggedInUser->user_id;
 if(!userIdExists($userId)){
@@ -11,9 +13,9 @@ if(!userIdExists($userId)){
 <head>
 <title>Timesheets</title>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="../../themes/ui.jqgrid.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="../../themes/ui.multiselect.css" />
-<link href="../models/site-templates/default.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" media="screen" href="/project/themes/ui.jqgrid.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/project/themes/ui.multiselect.css" />
+<link href="/project/admin/models/site-templates/default.css" rel='stylesheet' type='text/css' />
 <style type="text">
 <![CDATA[
         html, body {
@@ -26,15 +28,15 @@ if(!userIdExists($userId)){
 </style>
 <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="../../js/i18n/grid.locale-en.js" type="text/javascript"></script>
-<script src='../models/funcs.js' type='text/javascript'></script>
+<script src="/project/js/i18n/grid.locale-en.js" type="text/javascript"></script>
+<script src='/project/admin/models/funcs.js' type='text/javascript'></script>
 <script type="text/javascript">
 //<![CDATA[
   $.jgrid.no_legacy_api = true;
   $.jgrid.useJSON = true;
 //]]>
 </script>
-<script src="../../js/jquery.jqGrid.min.js" type="text/javascript"></script>
+<script src="/project/js/jquery.jqGrid.min.js" type="text/javascript"></script>
 <style>  .ui-menu { width: 130px; }  </style>
 <script type="text/javascript">
 //<![CDATA[
@@ -55,7 +57,7 @@ if(!userIdExists($userId)){
 <br />
 <br />
 <br />
-<div id='left-nav'><?php include($_SERVER["DOCUMENT_ROOT"] ."left-nav.php");  ?></div>
+<div id='left-nav'><?php include($_SERVER["DOCUMENT_ROOT"] ."/project/admin/left-nav.php");  ?></div>
 <div id='main'>
 <?
 if (!empty($_POST))
@@ -79,8 +81,8 @@ if (!empty($_POST))
 <form action="candidatetimesheets.php" id="form1" name="form1" method="post"  enctype="multipart/form-data">
 <h4>Timesheet Uploaded (Select):<input type="submit" name="Archive" value="Archive"></h4>
 <?php 
-  include_once ("../../../auth.php");
-  include_once ("../../../authconfig.php");			
+  include_once ("/auth.php");
+  include_once ("/authconfig.php");
 
   $files = array();
   $dir = new DirectoryIterator('../timesheets/');
@@ -95,7 +97,7 @@ if (!empty($_POST))
     if (strlen($filename) > 1 && strpos($filename, "arc-") === false) {
       $lastModified = date('F d Y, H:i:s',filemtime(utf8_decode('../timesheets/'.$file)));
     	echo "<input type='checkbox' name='mychk[]' value='$file'>";
-    	echo "<a href='http://www.innova-path.com/project/admin/timesheets/$file' target='_blank'>Uploaded: $lastModified Filename: $file </a><br>";
+    	echo "<a href='$root/timesheets/$file' target='_blank'>Uploaded: $lastModified Filename: $file </a><br>";
     }
   }			
 
