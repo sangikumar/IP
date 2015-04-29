@@ -13,22 +13,22 @@ if(!userIdExists($userId)){
 <title>Candidate Position Call Management</title>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
 <link rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
-<link href="/js/jquery.tagsinput.css" type="text/css" rel="stylesheet"/>
-<link href="project/admin/themes/newstyle.css" type="text/css" rel="stylesheet"/>
-<link href="/project/admin/models/site-templates/default.css" rel='stylesheet' type='text/css' />
-<link href="/project/js/datepicker/zebra_datepicker.css" rel='stylesheet' type='text/css' />
+<link href="exam/css/jquery.tagsinput.css" type="text/css" rel="stylesheet"/>
+<link href="exam/css/newstyle.css" type="text/css" rel="stylesheet"/>
+<link href="models/site-templates/default.css" rel='stylesheet' type='text/css' />
+<link href="exam/js/datepicker/zebra_datepicker.css" rel='stylesheet' type='text/css' />
 <link href="http://hayageek.github.io/jQuery-Upload-File/uploadfile.min.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
 <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-<script src="/project/js/datepicker/zebra_datepicker.js" type="text/javascript"></script>
-<script src="/project/js/numericInput.min.js" type="text/javascript"></script>
+<script src="exam/js/datepicker/zebra_datepicker.js" type="text/javascript"></script>
+<script src="exam/js/numericInput.min.js" type="text/javascript"></script>
 <script src="http://hayageek.github.io/jQuery-Upload-File/jquery.uploadfile.min.js"></script>
-<script src="/js/jquery.tagsinput.js"></script>
-<script src="/js/jquery.tagsinput.min.js"></script>
-<script src="/project/js/jquery.watermark.js" type="text/javascript"></script>
-<script src="/project/admin/models/funcs.js" type='text/javascript'></script>
+<script src="exam/js/jquery.tagsinput.js"></script>
+<script src="exam/js/jquery.tagsinput.min.js"></script>
+<script src="exam/js/jquery.watermark.js" type="text/javascript"></script>
+<script src="models/funcs.js" type='text/javascript'></script>
 <style>  
 .ui-menu { width: 130px; }  
 </style>
@@ -119,7 +119,7 @@ function finishAjax(id, response){
   <h2>Candidate Calls Questions</h2>
   <br />
   <div id='left-nav'>
-    <?php include($_SERVER["DOCUMENT_ROOT"] ."/project/admin/left-nav.php");  ?>
+    <?php include($_SERVER["DOCUMENT_ROOT"] ."left-nav.php");  ?>
   </div>
   <div id='main'>
   </div>
@@ -186,7 +186,7 @@ if (!empty($_POST))
           </tr>
         </thead>
         <tbody id="show_assignment">
-        <img src="/images/loader.gif" style="margin-top:8px; float:left" id="loader" alt="" />
+        <img src="../../images/loader.gif" style="margin-top:8px; float:left" id="loader" alt="" />
         </tbody>
         
         <tfoot>

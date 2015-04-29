@@ -1,5 +1,4 @@
 <?php
-
 require_once("../models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
 $userId = $loggedInUser->user_id;
@@ -14,21 +13,21 @@ if(!userIdExists($userId)){
 	<title>Recruiter Search</title>
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
 	<link rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
-	<link href="/project/admin/models/site-templates/default.css" rel='stylesheet' type='text/css' />
-	<link href="/project/js/jquery.tagsinput.css" type="text/css" rel="stylesheet"/>
-	<link href="/css/newstyle.css" type="text/css" rel="stylesheet"/>
-	<link href="/project/js/datepicker/zebra_datepicker.css" rel='stylesheet' type='text/css' />
+	<link href="models/site-templates/default.css" rel='stylesheet' type='text/css' />
+	<link href="../../../css/jquery.tagsinput.css" type="text/css" rel="stylesheet"/>
+	<link href="../../../css/newstyle.css" type="text/css" rel="stylesheet"/>
+	<link href="exam/js/datepicker/zebra_datepicker.css" rel='stylesheet' type='text/css' />
 	<link href="http://hayageek.github.io/jQuery-Upload-File/uploadfile.min.css" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 	<script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
 	<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-	<script src="/project/js/datepicker/zebra_datepicker.js" type="text/javascript"></script>
-	<script src="/project/js/numericInput.min.js" type="text/javascript"></script>
-	<script src="/project/js/jquery.tagsinput.js"></script>
-	<script src="/project/js/jquery.tagsinput.min.js"></script>
-	<script src="/project/js/jquery.watermark.js" type="text/javascript"></script>
-	<script src='/project/admin/models/funcs.js' type='text/javascript'></script>
+	<script src="exam/js/datepicker/zebra_datepicker.js" type="text/javascript"></script>
+	<script src="exam/js/numericInput.min.js" type="text/javascript"></script>
+	<script src="../../../js/jquery.tagsinput.js"></script>
+	<script src="../../../js/jquery.tagsinput.min.js"></script>
+	<script src="../../../js/jquery.watermark.js" type="text/javascript"></script>
+	<script src='../models/funcs.js' type='text/javascript'></script>
 	<script src="http://hayageek.github.io/jQuery-Upload-File/jquery.uploadfile.min.js"></script>
 	<style>
 		.ui-menu { width: 130px; }
@@ -113,12 +112,12 @@ if(!userIdExists($userId)){
   	color:#6e6e6e;
   	padding:10px;
   	border:none;
-  	background:url(/images/loading_static.gif) no-repeat right 50%;
+  	background:url(images/loading_static.gif) no-repeat right 50%;
   	width:500px;
   }
   /*The css class below contains the animated loading image .this will be added on the dom later with Jquery*/
   .faqsearchinputbox input.loading {
-  	background:url(/images/loading_animate.gif) no-repeat right 50%;
+  	background:url(images/loading_animate.gif) no-repeat right 50%;
   }
 </style>	
 
@@ -130,7 +129,7 @@ if(!userIdExists($userId)){
 </div>
 <div id='content'>
 <h1>Recruiter Search</h1>
-<div id='left-nav'><?php include($_SERVER["DOCUMENT_ROOT"] ."/project/admin/left-nav.php");  ?></div>
+<div id='left-nav'><?php include($_SERVER["DOCUMENT_ROOT"] ."left-nav.php");  ?></div>
 <div id='main'>
 	<?php
 
@@ -193,7 +192,7 @@ if(!userIdExists($userId)){
       	<div class="both">
       		<h1 id="show_heading">&nbsp;</h1>
       		<div id="show_document">
-      			<img src="/images/loader.gif" style="margin-top:8px; float:left" id="loader" alt="" />
+      			<img src="../../../images/loader.gif" style="margin-top:8px; float:left" id="loader" alt="" />			
       		</div>
       	</div>		
 				

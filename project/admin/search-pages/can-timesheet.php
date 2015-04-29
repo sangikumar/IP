@@ -11,15 +11,15 @@ if(!userIdExists($userId)){header("Location:login.php"); die();}
 <title>Candidate Timesheet</title>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
 <link rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
-<link href="/project/admin/models/site-templates/default.css" rel='stylesheet' type='text/css' />
-<link href="/project/js/datepicker/zebra_datepicker.css" rel='stylesheet' type='text/css' />
+<link href="http://project/admin/models/site-templates/default.css" rel='stylesheet' type='text/css' />
+<link href="http://project/js/datepicker/zebra_datepicker.css" rel='stylesheet' type='text/css' />
 <link href="http://hayageek.github.io/jQuery-Upload-File/uploadfile.min.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
 <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-<script src="/project/js/datepicker/zebra_datepicker.js" type="text/javascript"></script>
-<script src="/project/js/numericInput.min.js" type="text/javascript"></script>
+<script src="http://project/js/datepicker/zebra_datepicker.js" type="text/javascript"></script>
+<script src="http://project/js/numericInput.min.js" type="text/javascript"></script>
 <script src="http://hayageek.github.io/jQuery-Upload-File/jquery.uploadfile.min.js"></script>
 <style>  
 .ui-menu { width: 130px; }  
@@ -189,7 +189,7 @@ if (!empty($_POST))
         </tr>
       </table>
       <div class="both">
-        <div id="show_content"> <img src="/images/loader.gif" style="margin-top:8px; float:left" id="loader" alt="" /> </div>
+        <div id="show_content"> <img src="../../images/loader.gif" style="margin-top:8px; float:left" id="loader" alt="" /> </div>
       </div>
     </form>
     <?
